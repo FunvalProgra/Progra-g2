@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  /* background-color: red; */
+}
+
+/* p::first-line {
+  color: red;
+} */
+p {
+  display: flex;
+  flex-direction: column;
+}
+
+p::after {
+  content: "";
+  border-bottom: 3px solid red;
+  width: 0;
+  transition: width .4s;
+}
+
+p:hover::after {
+  width: 100%;
+}

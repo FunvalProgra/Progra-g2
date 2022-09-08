@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    .cnt-img {
+      width: 200px;
+      height: 100px;
+      border: 1px solid red;
+      box-sizing: border-box;
+    }
+
+    .cnt-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <label for="first-name">Primer Nombre:<input type="checkbox" id="first-name"></label>
+    
+
+    <label for="apellido">Apellido: </label>
+    <input type="text" id="apellido">
+
+    <input type="submit" value="Submit">
+  </form>
+
+
+  <main>
+    <div class="cnt-img">
+      <img src="https://placekitten.com/500/400" alt="">
+    </div>
+    
+
+    <section class="video">
+      <!-- <video autoplay style="width: 100%;" loop controls>
+        <source src="./Photographer-in-mountains.mp4" type="video/mp4">
+      </video> -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xL8OBZbQpss?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <form action="">
+
+      Sexo:
+      <label for="">
+
+         Hombre<input type="radio" name="username">
+        </label>
+        <label for="">
+          Mujer <input type="radio" name="username">
+
+        </label>
+        
+    </form>
+    
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>
