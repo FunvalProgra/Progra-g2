@@ -66,3 +66,46 @@ a {
   align-self: flex-start;
   text-decoration: none;
 }
+
+
+@media (min-width: 1024px) {
+  #container {
+    padding: 1.4rem 4rem;
+    max-width: 1440px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main-container {
+    display: flex;
+  }
+  
+  #hero {
+    width: 50%;
+  }
+
+  #hero img {
+    width: 70%;
+  }
+
+  .main-content {
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  .main-content h2 {
+    font-size: 4rem;
+  }
+
+  .main-content p {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+
+  .saludos {
+    text-align: center;
+  }
+}
