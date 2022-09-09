@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(257, 40%, 49%) url("./images/bg-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+p {
+  color: #FFF;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  font-family: 'Poppins', sans-serif ;
+}
+/* 
+FOnts     
+font-family: 'Open Sans', sans-serif;
+
+font-family: 'Poppins', sans-serif; */
+
+
+#logo {
+  width: 45%;
+}
+
+.main {
+  height: max-content;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero img {
+  width: 98%;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+
+.btn-register {
+  padding: .5rem 4rem;
+  background-color: #FFF;
+  color: hsl(257, 40%, 49%);
+  align-self: center;
+  font-size: .9rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+  transition: all .3s;
+}
+
+.btn-register:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #FFF;
+}
