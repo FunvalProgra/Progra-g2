@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --verydark-grayish-blue: hsl(217, 19%, 35%);
+  --verydark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  --font-size: 13px;
+  --font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  background-color: var(--light-grayish-blue);
+}
+
+.blue-font {
+  color: var(--verydark-blackish-blue);
+}
+
+.white-font {
+  color: var(--white);
+}
+
+.container {
+  width: 90%;
+  margin: 5rem auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  gap: 2rem;
+  padding: 2em;
+  box-shadow: 0 0 10px 1px var(--light-gray);
+}
+
+.cards:first-child {
+  background-color: var(--moderate-violet);
+  background-image: url('./images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: 90% top;
+}
+
+.cards:nth-child(2) {
+  background-color: var(--verydark-grayish-blue);
+}
+
+.cards:nth-child(3),
+.cards:nth-child(5) {
+  background-color: var(--white);
+  color: var(--verydark-grayish-blue);
+}
+
+.cards:nth-child(4) {
+  background-color: var(--verydark-blackish-blue);
+}
+
+
+.heros {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: repeat(2, max-content);
+  align-items: center;
+  grid-template-areas: 
+  "a b"
+  "a c"
+  ;
+}
+
+.heros img {
+  grid-area: a;
+  border-radius: 50%;
+  width: 70%;
+  justify-self: left;
+}
+
+.heros h1 {
+  grid-area: b;
+  font-size: 1em;
+  margin: 0;
+}
+
+.heros h3 {
+  grid-area: c;
+  font-size: 1em;
+  opacity: 50%;
+  font-weight: 500;
+}
+
+.texto {
+  font-size: 1.9em;
+}
+
+.quote {
+  font-size: 1.2em;
+  opacity: 70%;
+  font-weight: 500;
+}
+
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "card1 card1 card2 card5"
+    "card3 card4 card4 card5"
+    ;
+  }
+
+  .cards {
+    gap: .5rem;
+  }
+
+  .cards:first-child {
+    grid-area: card1;
+  }
+
+  .cards:nth-child(2) {
+    grid-area: card2;
+  }
+
+  .cards:nth-child(3) {
+    grid-area: card3;
+  }
+
+  .cards:nth-child(4) {
+    grid-area: card4;
+  }
+
+  .cards:last-child {
+    grid-area: card5;
+  }
+}

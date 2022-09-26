@@ -16,6 +16,11 @@ while (sexo.toUpperCase() != 'H' && sexo.toUpperCase() != 'M') {
   sexo = prompt("Ingresa tu sexo. (H si eres Hombre o M si eres Mujer)");
 }
 
+
+
+
+
+
 let nombre = prompt("Ingresa tu nombre.");
 let isMujerInA = 'ABCDEFGHIJKL';
 let isHombreInA = 'OPQRSTUVWXYZ';

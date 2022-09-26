@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+}
+
+.hijos {
+  height: 100px;
+  width: 200px;
+}
+
+.hijos:first-child {
+  background-color: red;
+}
+
+.hijos:nth-child(2) {
+  background-color: blue;
+}
+
+.hijos:nth-child(3) {
+  background-color: black;
+}
+.hijos:nth-child(4) {
+  background-color: green;
+}
+.hijos:nth-child(5) {
+  background-color: yellow;
+}
+.hijos:nth-child(6) {
+  background-color: pink;
+}
